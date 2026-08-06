@@ -1,0 +1,224 @@
+{
+  "departamentos": [
+    "Común",
+    "Urbanismo",
+    "SAC",
+    "Opcionales"
+  ],
+  "programas": [
+    {
+      "nombre": "Google Chrome",
+      "departamento": "Común",
+      "icono": "🌐",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "Google.Chrome"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\chrome",
+        "flags": "/silent /install"
+      }
+    },
+    {
+      "nombre": "Mozilla Firefox",
+      "departamento": "Común",
+      "icono": "🦊",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "Mozilla.Firefox",
+        "winget_args": "--locale es-ES"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\firefox",
+        "flags": "/S"
+      },
+      "version_desde_nombre_fichero": true
+    },
+    {
+      "nombre": "Adobe Acrobat Reader",
+      "departamento": "Común",
+      "icono": "📄",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "Adobe.Acrobat.Reader.64-bit"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\adobereader",
+        "flags": "/sAll /msi /norestart /quiet"
+      }
+    },
+    {
+      "nombre": "PDF24 Creator",
+      "departamento": "Común",
+      "icono": "🖨️",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "geeksoftwareGmbH.PDF24Creator"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\pdf24",
+        "flags": "/qn AUTOUPDATE=No FAXPRINTER=No"
+      }
+    },
+    {
+      "nombre": "LibreOffice",
+      "departamento": "Común",
+      "icono": "📊",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "TheDocumentFoundation.LibreOffice"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\libreoffice",
+        "flags": "/qn"
+      }
+    },
+    {
+      "nombre": "WinRAR",
+      "departamento": "Común",
+      "icono": "🗜️",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "RARLab.WinRAR"
+      },
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\winrar",
+        "flags": "/S"
+      }
+    },
+    {
+      "nombre": "Java 8 (Oracle JRE)",
+      "departamento": "Común",
+      "icono": "☕",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\java",
+        "flags": "/s"
+      },
+      "nombre_registro": "Java 8 Update",
+      "arquitectura": "64"
+    },
+    {
+      "nombre": "AutoFirma",
+      "departamento": "Común",
+      "icono": "🖊️",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\autofirma",
+        "flags": "/S /SD"
+      },
+      "nombre_registro": "AutoFirma"
+    },
+    {
+      "nombre": "microCLAUDIA",
+      "departamento": "Común",
+      "icono": "💉",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\microclaudia",
+        "flags": "API_KEY=VUESTRA_API_KEY_AQUI SERVER=microclaudia.ccn-cert.cni.es /qn"
+      },
+      "nombre_registro": "microclaudia",
+      "auto_actualizable": true,
+      "notas": "REQUIERE que el equipo esté ya unido al dominio; si se instala antes, la instalación falla.",
+      "requiere_dominio": true
+    },
+    {
+      "nombre": "RustDesk (config Ayto)",
+      "departamento": "Común",
+      "icono": "🖥️",
+      "notas": "Ya incluye servidor/relay del Ayto embebido",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\rustdesk",
+        "flags": "--silent-install"
+      },
+      "nombre_registro": "RustDesk"
+    },
+    {
+      "nombre": "FortiEDR",
+      "departamento": "Común",
+      "icono": "🛡️",
+      "notas": "Instalador regenerado periódicamente por Tomás con la key incrustada. REQUIERE que el equipo esté ya unido al dominio; si se instala antes, la instalación falla.",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\forti",
+        "flags": "/quiet"
+      },
+      "nombre_registro": "Fortinet Endpoint Detection and Response Platform",
+      "auto_actualizable": true,
+      "requiere_dominio": true
+    },
+    {
+      "nombre": "GANES (Correos)",
+      "departamento": "Opcionales",
+      "icono": "📦",
+      "notas": "Requiere Java (Temurin JRE) ya instalado. Genera albaranes offline para Correos. Instalador .exe confirmado; verificar si acepta /S o si necesita otro flag/instalación manual.",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\ganes",
+        "flags": "/S"
+      },
+      "nombre_registro": "GANES"
+    },
+    {
+      "nombre": "GstarCAD 2025",
+      "departamento": "Urbanismo",
+      "icono": "📐",
+      "notas": "Verificar switch de instalación silenciosa exacto de GstarCAD 2025 antes de dar por bueno el flag.",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\gstarcad",
+        "flags": "/S"
+      },
+      "nombre_registro": "GstarCAD"
+    },
+    {
+      "nombre": "Google Earth Pro",
+      "departamento": "Urbanismo",
+      "icono": "🌍",
+      "online": {
+        "tipo": "winget",
+        "id_winget": "Google.EarthPro"
+      },
+      "notas": "El .exe normal NO admite instalacion silenciosa: hay que extraer el GoogleEarth-EC-x64.msi (aparece brevemente en %LocalAppData%\\Temp tras pulsar Instalar en una instalacion manual) y meter ESE .msi en esta carpeta, no el .exe.",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\googleearthpro",
+        "flags": "/qn /norestart"
+      },
+      "nombre_registro": "Google Earth Pro"
+    },
+    {
+      "nombre": "Mesa",
+      "departamento": "SAC",
+      "icono": "🗂️",
+      "notas": "Verificar switch de instalación silenciosa antes de dar por bueno el flag.",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\mesa",
+        "flags": "/S"
+      },
+      "nombre_registro": "Mesa"
+    },
+    {
+      "nombre": "Java 8 32-bit (Oracle JRE)",
+      "departamento": "Opcionales",
+      "icono": "☕",
+      "notas": "Necesario para GANES y otras apps que requieren Java de 32 bits especificamente (no basta con el de 64 bits).",
+      "offline": {
+        "tipo": "instalador_vivo",
+        "ruta": "apps\\java32",
+        "flags": "/s"
+      },
+      "nombre_registro": "Java 8 Update",
+      "arquitectura": "32"
+    }
+  ]
+}
